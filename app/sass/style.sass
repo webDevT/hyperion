@@ -1,0 +1,630 @@
+@import "vars"
+@import "fonts"
+
+//start global style 
+body 
+    padding: 0 
+    margin: 0
+    font-family: $main-font 
+    font-size: 18px
+    font-weight: 400
+    color: #000
+.container-fluid    
+    width: 1480px 
+    max-width: 85vw
+    padding-left: 0 
+    padding-right: 0
+.h1 
+    font-size: 60px 
+    font-weight: 700
+    font-family: $titles-font
+    margin-bottom: 28px
+    color: $titles-font
+    line-height: 1.1
+.section 
+    padding-top: 100px 
+    padding-bottom: 100px
+.sub-title 
+    text-transform: uppercase
+    font-size: 16px
+    color: $blue
+    font-weight: 600
+    letter-spacing: 2px
+    margin-bottom: 17px
+.h2 
+    color: $titles-color
+    font-weight: 700 
+    font-size: 50px 
+    line-height: 1.2
+    font-family: $titles-font
+    margin-bottom: 0
+.h2--white 
+    color: #fff
+p 
+    margin-bottom: 0 
+    margin-top: 0
+.section-header--center
+    text-align: center
+    margin-bottom: 30px
+.text-center 
+    text-align: center
+a 
+    text-decoration: none
+.h3 
+    font-size: 24px
+    font-family: $titles-font
+    font-weight: 700
+    color: $titles-color
+    margin-bottom: 15px
+.blue-link
+    margin-top: 20px
+    color: $blue
+    position: relative
+    display: inline-block
+.blue-link:after
+    content: ''
+    width: 100% 
+    height: 1px 
+    background: $blue 
+    display: block
+    position: absolute 
+    left: 0 
+    top: 100% 
+    transition: all .5s
+
+.capabilities__item:hover .blue-link:after
+    position: relative
+    left: 10px 
+//end global style
+
+//start buttons style 
+.button
+    background: $gradient
+    color: #FFFFFF
+    display: flex
+    justify-content: center
+    align-items: center
+    padding: 15px 48px
+    border-radius: 4px
+    font-weight: 700
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25)
+    transition: all .3s
+    transform: scale(1)
+    text-decoration: none
+.button:hover
+    color: #fff
+.button:hover
+    box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.20)
+    transform: translateX(0px) translateY(-1.5px)
+.button-wrapper
+    display: flex 
+    justify-content: flex-start
+.button-wrapper--center
+    justify-content: center
+    margin-top: 30px
+.button--white 
+    background: #fff 
+    color: $dark-blue
+.button--white:hover 
+    color: $dark-blue
+//end buttons style 
+
+//start header style 
+.header
+    position: fixed 
+    top: 0 
+    left: 0 
+    width: 100%
+    padding-top: 20px 
+    padding-bottom: 20px
+    z-index: 99
+    transition: all .5s
+    .container-fluid 
+        display: flex
+        justify-content: space-between 
+        align-items: center
+.logo 
+    img 
+        width: 275px
+        transition: all .5s
+.menu 
+    ul 
+        display: flex
+        justify-content: center 
+        align-items: center 
+        padding: 0 
+        margin: 0
+        list-style: none
+        a 
+            font-size: 16px
+            font-family: $titles-font
+            text-decoration: none
+            color: $titles-color
+            position: relative
+        a:after 
+            content: ''
+            position: absolute
+            top: 110% 
+            left: 0 
+            width: 0% 
+            height: 2px
+            background: $blue
+            transition: all .5s
+        li 
+            margin-left: 45px
+        li:last-child
+            a
+                background: $gradient
+                color: #FFFFFF
+                display: flex 
+                justify-content: center 
+                align-items: center
+                padding: 15px 48px
+                border-radius: 4px
+                font-weight: 700
+                box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25)
+                transition: all .3s
+                transform: scale(1)
+            a:after 
+                display: none
+            a:hover
+                box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.20)
+                transform: translateX(0px) translateY(-1.5px)
+        a:hover::after 
+            width: 100%
+.header.sticky 
+    background: #fff
+    padding-top: 8px 
+    padding-bottom: 8px
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.1)
+    .logo
+        img
+            width: 120px
+.wrapper
+    width: 1200px 
+    max-width: 100%
+    margin-left: auto 
+    margin-right: auto
+//end header style
+
+//start main-screen style 
+.main-screen 
+    background: url('../img/wave.svg')
+    background-size: cover
+    background-repeat: no-repeat
+    background-position: top center
+    margin-top: 90px
+    padding-top: 200px
+    padding-bottom: 200px
+    .button 
+        margin-top: 32px
+.main-screen__img
+    max-width: 100%
+.main-screen__content
+    width: 588px 
+    max-width: 100%
+    padding-top: 40px
+//end main screen style
+
+//start partners style
+.partners 
+    .row 
+        display: flex 
+        align-items: center
+.partners__text
+    padding-left: 50px
+.partners__list
+    margin-top: 66px
+.partners__item
+    img 
+        max-width: 90%
+//end partners style
+
+//start mission style
+.mission 
+    padding-top: 100px 
+    padding-bottom: 100px 
+    background: $dark-blue
+    color: #fff
+//end mission style
+
+//start capabilities style
+.capabilities .col-lg-4
+    margin-top: 40px 
+.capabilities__item
+    display: block   
+    color: #000 
+    text-decoration: none
+    background: #fff
+    box-shadow: 0px 4px 17px rgba(0, 0, 0, 0.25)
+    border-radius: 10px
+    overflow: hidden
+    transition: all .3s
+    height: 100%
+.capabilities__item:hover 
+    color: #000
+    box-shadow: 15px 15px 30px rgba(0, 0, 0, 0.20)
+    transform: translateY(-2px) translateX(-2px)
+.capabilities__item-img
+    width: 100% 
+    height: 239px
+    object-fit: cover 
+    object-position: center 
+    align-items: center
+.capabilities__item-content
+    padding: 27px
+//end capabilities style
+
+//start cta style
+.cta__content
+    background: $blue
+    color: #fff
+    border-radius: 20px
+    padding: 60px 60px
+    text-align: center
+.cta__title
+    font-size: 32px 
+    font-weight: 700 
+    font-family: $titles-font
+    text-transform: capitalize
+    margin-bottom: 20px
+.cta__content-wrapper
+    width: 900px 
+    max-width: 100% 
+    margin-left: auto 
+    margin-right: auto
+//end cta style
+
+//start team style 
+.team__photo
+    width: 240px 
+    height: 240px 
+    object-fit: cover 
+    object-position: center
+    border-radius: 50%
+.team__item
+    text-align: center
+    margin-top: 50px
+    width: 380px
+    max-width: 100%
+    .h3 
+        margin-top: 10px 
+        margin-bottom: 10px
+
+.team 
+    .team__item .text 
+        text-align: left 
+        margin-left: auto 
+        margin-right: auto 
+        max-width: 100%
+
+.team__photo 
+    margin-bottom: 11px
+.team__position 
+    color: rgba(#000, .4)
+    margin-bottom: 20px
+.team__item-footer
+    display: flex 
+    justify-content: space-between 
+    align-items: center
+    margin-top: 28px
+.button-transparent
+    border: 1px solid $titles-color
+    width: 100% 
+    display: flex 
+    justify-content: center 
+    align-items: center 
+    height: 55px
+    border-radius: 4px
+    font-weight: 600
+    color: $titles-color
+    transition: all .5s 
+.button-transparent:hover 
+    color: #fff
+    background: $titles-color 
+.linkedin
+    width: 55px 
+    min-width: 55px 
+    margin-left: 15px
+    height: 55px
+    border: 1px solid $titles-color
+    display: flex 
+    justify-content: center 
+    align-items: center
+    border-radius: 4px
+    transition: all .5s
+.linkedin:hover 
+    background: $titles-color 
+    border-color: $titles-color
+    img 
+        filter: invert(1)
+.text--team
+    display: -webkit-box
+    -webkit-line-clamp: 5
+    -webkit-box-orient: vertical
+    overflow: hidden
+//end team style 
+
+//start news style 
+.news 
+    background: #F7F9FB
+    .section-header
+        margin-bottom: 70px
+.news-item
+    display: block
+    border-radius: 20px
+    overflow: hidden
+    box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.25)
+    color: #000
+    .h3 
+        margin-top: 5spx
+.news-item:hover 
+    color: #000
+.news__img
+    width: 100%
+    height: 293px 
+    object-fit: cover 
+    object-position: center
+.news-item__content
+    background: #fff
+    box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.25)
+    padding: 17px 25px
+.news-item__footer
+    display: flex 
+    justify-content: space-between 
+    align-items: center
+    margin-top: 30px
+.news-item__footer 
+    .news-link
+        color: $blue
+        font-weight: 500
+        display: flex 
+        align-items: center
+        img 
+            display: block 
+            margin-left: 10px
+            transition: all .3s
+.news-date
+    color: rgba(#000, .6)
+.news-link:hover 
+    img 
+        transform: translateX(3px)
+.news .col-lg-7
+    .news-item:first-child,
+    .news-item:nth-child(2)
+        margin-top: 56px
+        display: flex
+        flex-direction: row-reverse
+        box-shadow: none
+        border-radius: 0
+        overflow: visible
+        .news__img
+            width: 300px
+            margin-top: 15px
+            margin-bottom: 15px
+            border-top-right-radius: 20px
+            border-bottom-right-radius: 20px
+        .news-item__content
+            border-radius: 20px
+            display: flex 
+            flex-direction: column 
+            justify-content: center
+    .news-item:nth-child(2)
+        flex-direction: row
+        .news__img
+            border-top-left-radius: 20px
+            border-bottom-left-radius: 20px
+            border-top-right-radius: 0px
+            border-bottom-right-radius: 0px
+//end news style 
+
+//start testimonials style 
+.slick-slider
+    position: relative
+    box-sizing: border-box
+.slick-slide
+    opacity: 0.5
+    transition: all 0.3s ease
+.slick-slide
+    transform: scale(0.9)
+.slick-center
+    opacity: 1
+    transform: scale(1.1)
+    z-index: 10
+.slider-wrapper
+    margin-top: 70px
+.slide-item
+    padding: 30px
+.slide-item__wrapper
+    background: #F7F9FB
+    box-sizing: border-box
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+    border-radius: 10px
+    padding: 30px 60px
+    text-align: center
+    position: relative
+.slide-item__wrapper:after
+    content: ''
+    position: absolute
+    width: 50px 
+    height: 38px 
+    background: url('../img/dots.svg')
+    background-size: 100%
+    display: block 
+    top: -8px
+    left: 10%
+.author-photo
+    display: block 
+    margin-left: auto 
+    margin-right: auto
+    border-radius: 50% 
+    object-fit: cover 
+    object-position: center
+    margin-bottom: 12px
+.author-name 
+    font-size: 30px 
+    font-weight: 600
+    text-transform: capitalize
+    color: #15264C
+    margin-bottom: 0px
+.author-position
+    color: #687286
+    font-style: italic
+    margin-bottom: 10px
+.prev,
+.next
+    width: 50px 
+    height: 50px
+    border-radius: 50%
+    border: 1px solid #D9D9D9
+    display: flex 
+    justify-content: center 
+    align-items: center
+    cursor: pointer
+    position: absolute 
+    top: 50% 
+    transform: translateY(-50%)
+    z-index: 99
+    background: #fff
+    transition: all .3s
+.slider-wrapper 
+    position: relative 
+.prev 
+    left: 14vw
+.next 
+    right: 14vw
+.prev:hover,
+.next:hover
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+//end testimonials style
+
+//start footer style 
+.footer 
+    background: url('../img/footer-bg.svg')
+    background-size: 1920px
+    background-position: bottom center 
+    background-repeat: no-repeat
+    padding-bottom: 40px
+    padding-top: 100px
+.footer__row
+    display: flex 
+    justify-content: space-between
+.form-wrapper
+    width: 658px 
+    max-width: 100%
+    background: linear-gradient(179.24deg, #09248C -41.4%, #15B7E1 148.51%)
+    padding: 45px 70px
+    border-radius: 20px
+    .form-title
+        text-align: center
+        color: #fff
+        font-size: 40px
+        font-family: $titles-color
+        font-weight: 700
+        margin-bottom: 40px
+.form 
+    input,
+    textarea
+        background: #fff
+        border-radius: 4px 
+        border: none 
+        outline: none
+        width: 100%
+        height: 60px
+        padding: 20px 35px 
+        margin-bottom: 25px
+    textarea 
+        height: 128px
+input[type="submit"]
+    background: #15264C
+    color: #fff
+    font-family: $titles-font
+    font-weight: 700
+    transition: all .3s
+input[type="submit"]:hover 
+    box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.20)
+    transform: translateX(0px) translateY(-1.5px)
+.footer-col
+    width: 50%
+.footer-content
+    margin-top: 350px
+    color: #fff
+    .h3 
+        color: #fff
+        margin-top: 56px
+.footer__item-title
+    display: flex 
+    align-items: center
+    text-transform: uppercase 
+    letter-spacing: 2px
+    color: $blue
+    margin-bottom: 10px
+    img 
+        display: block 
+        margin-right: 10px
+.footer-link
+    color: #fff
+.footer-link:hover 
+    color: #fff
+.footer__item 
+    margin-bottom: 90px
+.footer__item:last-child 
+    margin-bottom: 0
+.footer-content
+    p 
+        width: 280px 
+        max-width: 100%
+.footer__bottom
+    display: flex 
+    justify-content: space-between
+    align-items: center
+    color: #fff
+    padding-top: 40px 
+    padding-bottom: 40px
+.footer-social
+    display: flex 
+    align-items: center 
+    a 
+        display: block 
+        margin-left: 20px
+        transition: all .3s
+    a:hover 
+        opacity: 0.8
+.copy 
+    text-align: center
+    color: #fff
+    font-size: 16px
+.slick-dots
+    display: flex 
+    justify-content: center 
+    align-items: center 
+    padding: 0 
+    margin: 0
+    list-style: none
+    font-size: 0
+    border: none
+    border-radius: 0 
+    margin-top: 15px
+    .slick-active
+        button 
+            background: $blue
+    button 
+        width: 9px 
+        height: 9px
+        border: none
+        border-radius: 50%
+        padding: 0
+        margin: 0 5px
+        background: #D9D9D9
+        outline: none
+    
+//end footer style 
+video 
+    width: 100vw
+    height: 100vh 
+    object-fit: cover 
+    object-position: center
+@import "media"
+
+
+

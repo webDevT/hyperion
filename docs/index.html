@@ -1,0 +1,897 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Hyperion</title>
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jost:ital,wght@0,100..900;1,100..900&family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+	<link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+	<style>
+		/* Стили для прелоадера */
+		#preloader {
+		  position: fixed;
+		  top: 0;
+		  left: 0;
+		  width: 100%;
+		  height: 100%;
+		  background-color: #fff; /* Фоновый цвет */
+		  display: flex;
+		  justify-content: center;
+		  align-items: center;
+		  z-index: 10000; /* Поверх всего */
+		}
+	
+		#preloader video {
+		  max-width: 100%;
+		  max-height: 100%;
+		}
+	
+		/* Анимация исчезновения */
+		.fade-out {
+		  animation: fadeOut 1s ease forwards;
+		}
+	
+		@keyframes fadeOut {
+		  to {
+			opacity: 0;
+			visibility: hidden;
+		  }
+		}
+	  </style>
+	    <div id="preloader">
+			<video id="loader-video" autoplay muted>
+			  <source src="img/loader.mp4" type="video/mp4">
+			 
+			</video>
+		  </div>
+<!-- start header -->
+<header class="header">
+	<div class="container-fluid">
+
+		<div class="logo">
+			<a href="">
+				<img src="img/logo.svg" alt="">
+			</a>
+		</div>
+
+		<div class="menu-btn">
+			<div class="menu-row"></div>
+			<div class="menu-row"></div>
+			<div class="menu-row"></div>
+		</div>
+
+		<div class="menu" id="menu">
+			<ul>
+
+				<li>
+					<a href="#about">
+						About Us
+					</a>
+				</li>
+
+				<li>
+					<a href="#capabilities">
+						Capabilities
+					</a>
+				</li>
+
+				<li>
+					<a href="">
+						Products
+					</a>
+				</li>
+
+				<li>
+					<a href="#team">
+						Team
+					</a>
+				</li>
+
+				<li>
+					<a href="#news">
+						News
+					</a>
+				</li>
+
+				<li>
+					<a href="#testimonials">
+						Testimonials
+					</a>
+				</li>
+
+				<li>
+					<a href="#contact">
+						Contact Us
+					</a>
+				</li>
+
+			</ul>
+		</div>
+
+	</div>
+</header>
+<!-- end header -->
+
+<!-- start main screen -->
+<section class="main-screen" id="about">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-lg-6">
+				<div class="main-screen__content">
+					<h1 class="h1">
+						Delivering <br>
+Effective capability
+					</h1>
+
+					
+					<p>
+						From expertly mitigating explosive threats to developing and managing advanced Close Air Support programs, we are dedicated to delivering unparalleled expertise and innovative solutions across a wide range of critical defence and security capabilities. 
+					</p>
+
+					<p>
+						Our experience and commitment to excellence ensures that we meet the evolving challenges of modern defence and security operations, providing comprehensive support and cutting-edge technologies that empower our clients to operate with confidence and precision in the most demanding environments.
+
+					</p>
+
+					<div class="button-wrapper">
+						<a href="#capabilities" class="button">
+						Explore Our Capabilities
+					</a>
+					</div>
+					
+				</div>
+			</div>
+			<div class="col-lg-6">
+				<img src="img/ilustration.png" alt="" class="main-screen__img">
+			</div>
+		</div>
+	</div>
+</section>
+<!-- end main screen -->
+
+<!-- start partners section -->
+<section class="partners section">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-lg-4">
+				<div class="section-header">
+					<div class="sub-title">
+						partners
+					</div>
+					<h2 class="h2">
+						Empowering Innovation Through Partnerships
+					</h2>
+				</div>
+			</div>
+			<div class="col-lg-8">
+				<p class="partners__text">
+					At Hyperion Defence Solutions, our strength lies in the power of collaboration. We work alongside a trusted network of global partners, including leading technology providers, equipment manufacturers, and strategic consultants, to deliver integrated and innovative solutions for our clients. By leveraging these partnerships, we ensure access to the latest advancements, resources, and expertise, enabling us to meet even the most complex defence and security challenges with agility and precision.
+				</p>
+			</div>
+		</div>
+
+		<div class="partners__list">
+			<div class="row">
+
+				<div class="col-md-3 col-6">
+					<div class="partners__item">
+						<img src="img/partners/logo1.png" alt="">
+					</div>
+				</div>
+	
+				<div class="col-md-3 col-6">
+					<div class="partners__item">
+						<img src="img/partners/logo2.png" alt="">
+					</div>
+				</div>
+	
+				<div class="col-md-3 col-6">
+					<div class="partners__item">
+						<img src="img/partners/logo3.png" alt="">
+					</div>
+				</div>
+	
+				<div class="col-md-3 col-6">
+					<div class="partners__item">
+						<img src="img/partners/logo4.png" alt="">
+					</div>
+				</div>
+				
+	
+	
+			</div>
+		</div>
+		
+	</div>
+</section>
+<!-- end main screen section -->
+
+<!-- start mission section -->
+<section class="mission">
+	<div class="container-fluid">
+		
+		<div class="section-header section-header--center">
+			<div class="sub-title">
+				our mission
+			</div>
+			<h2 class="h2 h2--white">
+				Empowering Success in a Rapidly Evolving World
+			</h2>
+		</div>
+
+		<div class="wrapper">
+			<p class="text text-center">At Hyperion Defence Solutions, our mission is to deliver comprehensive global defence and security solutions that empower our clients to meet the evolving demands of current and future operating environments. We recognize that the rapid pace of change in today's world leads to ever-evolving requirements, accordingly we provide bespoke, cutting-edge solutions that leverage the latest in innovation and technology. Through strategic and interconnected partnerships, we offer fully integrated capabilities across the entire development life cycle, collaborating closely with all stakeholders to ensure success.</p>
+
+			<div class="button-wrapper button-wrapper--center">
+				<a href="#capabilities" class="button">
+				Explore Our Capabilities
+			</a>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- end mission section -->
+
+<!-- start capabilities section -->
+<section class="section capabilities" id="capabilities">
+	<div class="container-fluid">
+
+		<div class="section-header section-header--center">
+			<div class="sub-title">
+				our Capabilities
+			</div>
+			<h2 class="h2">
+				Tailored Solutions to Empower <br>
+Your Mission
+			</h2>
+		</div>
+
+		<div class="capabilities__list">
+			<div class="row">
+
+				<!-- start capabilitie item -->
+				<div class="col-lg-4 col-md-6">
+					<a href="" class="capabilities__item">
+						<img src="img/capabilities/c1.jpg" alt="" class="capabilities__item-img">
+
+						<div class="capabilities__item-content">
+							<div class="h3">
+								JCAS Programme Support
+							</div>
+
+							<p>
+								We specialize in designing, planning, and implementing tailored Close Air Support (CAS) solutions. From training and equipment provision to simulation and operational support, our expertise and experience will ensure the delivery of cost-effective capability to best meet a host nations programme requirements.
+
+							</p>
+
+							<div class="blue-link">
+								Learn More
+							</div>
+						</div>
+					</a>
+				</div>
+				<!-- end capabilitie item -->
+
+				<!-- start capabilitie item -->
+				<div class="col-lg-4 col-md-6">
+					<a href="" class="capabilities__item">
+						<img src="img/capabilities/c2.jpg" alt="" class="capabilities__item-img">
+
+						<div class="capabilities__item-content">
+							<div class="h3">
+								EOD and C-IED
+							</div>
+
+							<p>
+								Protecting lives and ensuring safety, our Explosive Ordnance Disposal (EOD) and Counter-Improvised Explosive Device (C-IED) solutions are at the forefront of threat mitigation. Combining state-of-the-art equipment with expert training, we empower teams to effectively detect, neutralize, and dispose of explosive hazards in any environment. 
+
+							</p>
+
+							<div class="blue-link">
+								Learn More
+							</div>
+						</div>
+					</a>
+				</div>
+				<!-- end capabilitie item -->
+
+				<!-- start capabilitie item -->
+				<div class="col-lg-4 col-md-6">
+					<a href="" class="capabilities__item">
+						<img src="img/capabilities/c3.jpg" alt="" class="capabilities__item-img">
+
+						<div class="capabilities__item-content">
+							<div class="h3">
+								Security Risk Management.
+							</div>
+
+							<p>
+								Safeguard your operations with our comprehensive security risk management services, combining expert consultancy, personal protection, and offensive cyber security. Our tailored approach identifies and mitigates threats across physical and digital domains, ensuring robust protection for your assets and personnel in any environment.
+
+
+							</p>
+
+							<div class="blue-link">
+								Learn More
+							</div>
+						</div>
+					</a>
+				</div>
+				<!-- end capabilitie item -->
+
+				<!-- start capabilitie item -->
+				<div class="col-lg-4 col-md-6">
+					<a href="" class="capabilities__item">
+						<img src="img/capabilities/c4.jpg" alt="" class="capabilities__item-img">
+
+						<div class="capabilities__item-content">
+							<div class="h3">
+								Simulation Services
+							</div>
+
+							<p>
+								We provide and integrate mobile and fixed simulators to meet individual and collective training needs by offering platform agnostic hardware and software solutions to best fit your requirements. Incorporating extended reality (XR) where applicable, we create immersive environments for personnel to develop skills in safe, adaptable and realistic scenarios.
+
+
+							</p>
+
+							<div class="blue-link">
+								Learn More
+							</div>
+						</div>
+					</a>
+				</div>
+				<!-- end capabilitie item -->
+
+				<!-- start capabilitie item -->
+				<div class="col-lg-4 col-md-6">
+					<a href="" class="capabilities__item">
+						<img src="img/capabilities/c5.jpg" alt="" class="capabilities__item-img">
+
+						<div class="capabilities__item-content">
+							<div class="h3">
+								Training Services
+							</div>
+
+							<p>
+								Protecting lives and ensuring safety, our Explosive Ordnance Disposal (EOD) and Counter-Improvised Explosive Device (C-IED) solutions are at the forefront of threat mitigation. Combining state-of-the-art equipment with expert training, we empower teams to effectively detect, neutralize, and dispose of explosive hazards in any environment. 
+							</p>
+
+							<div class="blue-link">
+								Learn More
+							</div>
+						</div>
+					</a>
+				</div>
+				<!-- end capabilitie item -->
+
+				<!-- start capabilitie item -->
+				<div class="col-lg-4 col-md-6">
+					<a href="" class="capabilities__item">
+						<img src="img/capabilities/c6.png" alt="" class="capabilities__item-img">
+
+						<div class="capabilities__item-content">
+							<div class="h3">
+								Procurement and Logistics
+							</div>
+
+							<p>
+								Our comprehensive procurement and logistics services leverage an extensive network of trusted suppliers and partners to access to a broad range of high-quality resources across all capability areas.  We deliver to the most challenging locations, to ensure you are mission equipped for success, before you cross the line of departure
+
+							</p>
+
+							<div class="blue-link">
+								Learn More
+							</div>
+						</div>
+					</a>
+				</div>
+				<!-- end capabilitie item -->
+
+
+			</div>
+		</div>
+	</div>
+</section>
+<!-- end capabilities section -->
+
+<!-- start cta section -->
+<section class="cta">
+	<div class="container-fluid">
+		<div class="cta__content wrapper">
+			<div class="cta__content-wrapper">
+				<div class="cta__title">
+				Let us ensure your personnel gain the skills and confidence they need required to excel in the most challenging and high-pressure situations.
+			</div>
+
+			<p class="cta__text">
+				Trust us to source the equipment you need. 
+</p>
+<p class="cta__text">
+	Mission at the right time, wherever your mission takes you.
+</p>
+<div class="button-wrapper button-wrapper--center">
+	<a href="#capabilities" class="button button--white">
+	Explore Our Capabilities
+</a>
+</div>
+			
+			</div>
+			
+		</div>
+	</div>
+</section>
+<!-- end cta section -->
+
+<!-- start team section -->
+<section class="team section" id="team">
+	<div class="container-fluid">
+
+		<div class="section-header section-header--center">
+			<div class="sub-title">
+				our team
+			</div>
+			<h2 class="h2">
+				Experienced Minds, United <br>
+Purpose
+			</h2>
+		</div>
+
+		<div class="row">
+
+			<!-- start team item -->
+			<div class="col-lg-4">
+				
+				<div class="team__item">				
+					<img src="img/team/photo1.jpg" alt="" class="team__photo">
+					<h3 class="h3">
+						Chris Derbyshire
+					</h3>
+					<div class="team__position">
+						Co-Founder and Director
+					</div>
+					<p class="text text--team">
+						Chris served in the British Army for 18 years as an officer in the Royal Regiment of Artillery. Having excelled in roles within operations, training and procurement he has a unique understanding of delivering military capability across all lines of development.
+
+									
+					</p>
+
+					<div class="team__item-footer">
+						<a href="" class="button-transparent">
+							Learn More
+						</a>
+
+						<a href="" class="linkedin">
+							<img src="img/linkedin.svg" alt="">
+						</a>
+					</div>
+				</div>
+				
+			</div>
+			<!-- end team item -->
+
+			<!-- start team item -->
+			<div class="col-lg-4">
+				
+				<div class="team__item">				
+					<img src="img/team/photo2.jpg" alt="" class="team__photo">
+					<h3 class="h3">
+						Tim Grey
+					</h3>
+					<div class="team__position">
+						Co-Founder and Director
+					</div>
+					<p class="text text--team">
+						Tim served as a British Army officer over two periods from 1995 to 2011, initially in the Royal Corps of Signals and subsequently in the Educational and Training Services Branch of the Adjutant General’s Corps. He has excellent technical and academic credentials and a wealth of experience in learning and training development.
+					</p>
+
+					<div class="team__item-footer">
+						<a href="" class="button-transparent">
+							Learn More
+						</a>
+
+						<a href="" class="linkedin">
+							<img src="img/linkedin.svg" alt="">
+						</a>
+					</div>
+				</div>
+				
+			</div>
+			<!-- end team item -->
+
+			<!-- start team item -->
+			<div class="col-lg-4">
+				
+				<div class="team__item">				
+					<img src="img/team/photo3.png" alt="" class="team__photo">
+					<h3 class="h3">
+						Joseph McMahon
+					</h3>
+					<div class="team__position">
+						Director Security Affairs
+					</div>
+					<p class="text text--team">
+						
+						Joe is a highly experienced senior consultant, with over 20 years in the security field.  Having worked full-time with Control Risks, S-RM and other major security consultancies, Joe has provided services to a multitude of companies and organisations around the world spanning all industries including telecoms, oil and gas, banking and finance, construction, defence and government.
+					</p>
+
+					<div class="team__item-footer">
+						<a href="" class="button-transparent">
+							Learn More
+						</a>
+
+						<a href="" class="linkedin">
+							<img src="img/linkedin.svg" alt="">
+						</a>
+					</div>
+				</div>
+				
+			</div>
+			<!-- end team item -->
+
+		</div>
+	</div>
+</section>
+<!-- end team section -->
+
+<!-- start news section -->
+<section class="news section" id="news">
+	<div class="container-fluid">
+		<div class="row">
+
+			<div class="col-lg-5">
+				<div class="section-header">
+					<div class="sub-title">
+						NEWS
+					</div>
+					<h2 class="h2">
+						Stay Updated with the Latest News and Insights
+					</h2>
+				</div>
+
+				<a href="" class="news-item">
+					<div class="news__img-wrapper">
+						<img src="img/news/news1.jpg" alt="" class="news__img">
+					</div>
+
+					<div class="news-item__content">
+						<h3 class="h3">
+							Lorem ipsum dolor sit
+						</h3>
+						<p class="text--team">
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta molestiae quod magni aspernatur? Placeat qui saepe vitae debitis corrupti cupiditate odit minima, accusamus numquam molestiae ipsum officiis necessitatibus nihil ratione
+						</p>
+
+						<div class="news-item__footer">
+							<div class="news-date">
+								22 December 2024
+							</div>
+
+							<div class="news-link">
+								Read More 
+								<img src="img/arrow.svg" alt="">
+							</div>
+						</div>
+					</div>
+					
+				</a>
+
+			</div>
+
+			<div class="col-lg-7">
+
+				<a href="" class="news-item">
+					<div class="news__img-wrapper">
+						<img src="img/news/news2.jpg" alt="" class="news__img">
+					</div>
+
+					<div class="news-item__content">
+						<h3 class="h3">
+							Lorem ipsum dolor sit
+						</h3>
+						<p class="text--team">
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta molestiae quod magni aspernatur? Placeat qui saepe vitae debitis corrupti cupiditate odit minima, accusamus numquam molestiae ipsum officiis necessitatibus nihil ratione
+						</p>
+
+						<div class="news-item__footer">
+							<div class="news-date">
+								22 December 2024
+							</div>
+
+							<div class="news-link">
+								Read More 
+								<img src="img/arrow.svg" alt="">
+							</div>
+						</div>
+					</div>					
+				</a>
+
+				<a href="" class="news-item">
+					<div class="news__img-wrapper">
+						<img src="img/news/news3.jpg" alt="" class="news__img">
+					</div>
+
+					<div class="news-item__content">
+						<h3 class="h3">
+							Lorem ipsum dolor sit
+						</h3>
+						<p class="text--team">
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta molestiae quod magni aspernatur? Placeat qui saepe vitae debitis corrupti cupiditate odit minima, accusamus numquam molestiae ipsum officiis necessitatibus nihil ratione
+						</p>
+
+						<div class="news-item__footer">
+							<div class="news-date">
+								22 December 2024
+							</div>
+
+							<div class="news-link">
+								Read More 
+								<img src="img/arrow.svg" alt="">
+							</div>
+						</div>
+					</div>					
+				</a>
+
+			</div>
+
+		</div>
+	</div>
+</section>
+<!-- end news section -->
+
+<!-- start testimonials section -->
+<section class="testimonials section" id="testimonials">
+	<div class="container-fluid">
+		<div class="section-header section-header--center">
+			<div class="sub-title">
+				testimonials
+			</div>
+			<h2 class="h2">
+				Voices of Trust and <br>
+Excellence
+			</h2>
+		</div>
+		</div>
+
+			
+
+			<div class="slider-wrapper"><div class="prev">
+				<img src="img/prev.svg" alt="">
+			</div>
+			<div class="next">
+				<img src="img/next.svg" alt="">
+			</div>
+				<div class="slick-slider">
+
+				<div class="slide">
+					<div class="slide-item">
+						<div class="slide-item__wrapper">
+						
+								<img src="img/author.png" alt="" class="author-photo">
+								<div class="author-name">
+									michael Doue
+								</div>
+								<div class="author-position">
+									Role or occupation here at Organisation name here
+								</div>
+								<p>
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in.
+								</p>
+						
+						</div>
+					</div>
+				</div>
+
+				<div class="slide">
+					<div class="slide-item">
+						<div class="slide-item__wrapper">
+						
+								<img src="img/author.png" alt="" class="author-photo">
+								<div class="author-name">
+									michael Doue
+								</div>
+								<div class="author-position">
+									Role or occupation here at Organisation name here
+								</div>
+								<p>
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in.
+								</p>
+						
+						</div>
+					</div>
+				</div>
+
+				<div class="slide">
+					<div class="slide-item">
+						<div class="slide-item__wrapper">
+						
+								<img src="img/author.png" alt="" class="author-photo">
+								<div class="author-name">
+									michael Doue
+								</div>
+								<div class="author-position">
+									Role or occupation here at Organisation name here
+								</div>
+								<p>
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in.
+								</p>
+						
+						</div>
+					</div>
+				</div>
+
+				<div class="slide">
+					<div class="slide-item">
+						<div class="slide-item__wrapper">
+						
+								<img src="img/author.png" alt="" class="author-photo">
+								<div class="author-name">
+									michael Doue
+								</div>
+								<div class="author-position">
+									Role or occupation here at Organisation name here
+								</div>
+								<p>
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in.
+								</p>
+						
+						</div>
+					</div>
+				</div>
+
+			  </div>
+			</div>
+					  
+		</div>
+	
+</section>
+<!-- end testimonials section -->
+
+<!-- start footer -->
+<footer class="footer" id="contact">
+	<div class="container-fluid">
+		<div class="footer__row">
+
+			<div class="footer-col">
+				<div class="footer-content">
+					<div class="row">
+					<div class="col-md-6">
+						
+						<img src="img/footer-img.png" alt="" class="footer-img">
+
+						<h3 class="h3">
+							Get In Touch
+						</h3>
+						<p>
+							We’d love to hear from you. Please get in touch with us by filling out the form below or emailing us
+						</p>
+					</div>
+					<div class="col-md-6">
+
+						<div class="footer__item">
+							<div class="footer__item-title">
+								<img src="img/email.svg" alt="">
+								Email
+							</div>
+							<a href="" class="footer-link">
+								info@hyperion-defence.com
+							</a>
+						</div>
+
+						<div class="footer__item">
+							<div class="footer__item-title">
+								<img src="img/map.svg" alt="">
+								adress
+							</div>
+							<a href="" class="footer-link">
+								Address : 71 - 75 Shelton <br>
+								Street, Covent Garden, <br>
+								London WC2H 9JQ
+							</a>
+						</div>
+
+					</div>
+				</div>		
+				</div>
+				
+			</div>
+
+			<div class="footer-col">
+				<div class="form-wrapper">
+					<h2 class="form-title">Contact Us</h2>
+
+					<form action="" class="form">
+						<input type="text" placeholder="First Name">
+						<input type="text" placeholder="Last Name">
+						<input type="text" placeholder="Email">
+						<input type="text" placeholder="Phone">
+						<textarea name="" id="" placeholder="Message" ></textarea>
+						<input type="submit" value="Explore Our Capabilities">
+					</form>
+				</div>
+			</div>
+
+		</div>
+
+		<div class="footer__bottom">
+			<a href="" class="footer-logo">
+				<img src="img/footer-logo.svg" alt="">
+			</a>
+			<div class="footer-social">
+				<a href="">
+					<img src="img/linkedin2.svg" alt="">
+				</a>
+				<a href="">
+					<img src="img/gmail.svg" alt="">
+				</a>
+			</div>
+		</div>
+
+		<div class="copy">
+			@ Copyright 2023 – All Rights Reserved – Hyperion Defence Reg No: 14465834.
+		</div>
+
+
+	</div>
+</footer>
+<!-- end footer -->
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+	<script src="js/main.js"></script>
+	
+
+	<script>
+		$(document).ready(function () {
+  $('.slick-slider').slick({
+    centerMode: true,         
+    centerPadding: '17vw',   
+    slidesToShow: 1,          
+    arrows: true,             
+    infinite: true,           
+    autoplay: false,
+	prevArrow: $('.prev'),
+	nextArrow: $('.next'),  
+	dots: true,       
+    responsive: [
+      {
+        breakpoint: 768,      
+        settings: {
+          slidesToShow: 1,
+          centerPadding: '3vw',
+        }
+      }
+    ]
+  });
+});
+
+	</script>
+
+<script>
+    // Когда видео заканчивается
+    const preloader = document.getElementById('preloader');
+    const loaderVideo = document.getElementById('loader-video');
+    const content = document.getElementById('content');
+
+    loaderVideo.addEventListener('ended', () => {
+      // Добавляем класс fade-out для исчезновения
+      preloader.classList.add('fade-out');
+      
+      // Удаляем прелоадер после анимации
+      setTimeout(() => {
+        preloader.style.display = 'none';
+        content.style.display = 'block'; // Показываем содержимое
+      }, 1000); // Время должно совпадать с длительностью fadeOut
+    });
+  </script>
+</body>
+</html>

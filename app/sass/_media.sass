@@ -1,0 +1,333 @@
+@import "vars"
+
+/*==========  Desktop First  ==========*/
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1560px)
+	/**/
+	.h2 
+		font-size: 46px
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1440px)
+	/**/
+	.menu ul li
+		margin-left: 40px
+	.container-fluid 
+		max-width: 95vw
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1300px)
+	/**/
+	.logo 
+		img 
+			width: 200px
+	.menu ul li a 
+		font-size: 16px
+	.main-screen
+		margin-top: 55px
+	.h2 
+		font-size: 42px
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px)
+	/**/
+	.logo 
+		img 
+			width: 160px
+	.menu ul li
+		margin-left: 30px
+	.menu ul li:last-child a 
+		padding: 15px 20px
+	.partners__text
+		padding-left: 0
+	.news .col-lg-7 .news-item:first-child .news__img,
+	.news .col-lg-7 .news-item:nth-child(2) .news__img
+		width: 220px
+
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px)
+	/**/
+	.menu 
+		display: none
+	.menu-row 
+		width: 30px 
+		height: 3px 
+		margin-bottom: 6px 
+		background: $dark-blue
+		border-radius: 4px
+		transition: all .3s
+	.menu-row:last-child 
+		margin-bottom: 0
+	.menu-btn
+		cursor: pointer
+		z-index: 999
+	.menu-btn.active 
+		.menu-row:last-child
+			display: none
+		.menu-row:first-child 
+			transform: rotate(45deg)
+			position: relative
+			top: 8.3px
+		.menu-row:nth-child(2)
+			transform: rotate(-45deg)
+	.header 
+		padding-top: 10px 
+		padding-bottom: 10px
+	.menu.active
+		position: fixed 
+		top: 0 
+		left: 0 
+		width: 100vw 
+		height: 100vh
+		overflow-y: auto
+		background: #fff
+		z-index: 99
+		display: block
+		padding-top: 125px
+	.logo 
+		z-index: 999
+	.menu ul 
+		flex-direction: column 
+		align-items: flex-start
+		padding-left: 5vw 
+		padding-right: 5vw
+		padding-bottom: 30px
+	.menu ul li
+		width: 100%
+	.menu ul li
+		margin-left: 0
+	.container-fluid 
+		max-width: 90vw
+	.menu ul li
+		margin-bottom: 35px
+		a 
+			font-size: 18px
+	.menu ul li:last-child 
+		margin-bottom: 0 
+	.main-screen
+		margin-top: 30px
+	.main-screen
+		background-size: 1500px
+	.main-screen__content
+		width: 100%
+	.main-screen
+		padding-top: 130px
+	.main-screen__img 
+		display: block 
+		margin-left: auto 
+		margin-right: auto
+		margin-top: 150px
+	.main-screen
+		padding-bottom: 0
+	.cta__content
+		padding-left: 20px 
+		padding-right: 20px
+		padding-top: 45px 
+		padding-bottom: 45px
+	.cta__title
+		font-size: 18px
+	.team__item
+		width: 100%
+	.news .col-lg-7 .news-item:first-child,
+	.news .col-lg-7 .news-item:nth-child(2)
+		flex-direction: column
+	.news .col-lg-7 .news-item:first-child .news__img,
+	.news .col-lg-7 .news-item:nth-child(2) .news__img
+		width: 100%
+		margin-top: 0 
+		margin-bottom: 0
+		border-radius: 0
+	.news .col-lg-7 .news-item:first-child .news-item__content,
+	.news .col-lg-7 .news-item:nth-child(2) .news-item__content
+		border-radius: 0 
+		box-shadow: none
+	.news .col-lg-7 .news-item:first-child, 
+	.news .col-lg-7 .news-item:nth-child(2)
+		border-radius: 15px	
+	.news .col-lg-7 .news-item:first-child, 
+	.news .col-lg-7 .news-item:nth-child(2)
+		border-radius: 15px
+		overflow: hidden
+		box-shadow: 0px 4px 14px rgba(0,0,0,.25)
+	.news-item__footer 
+		margin-top: 20px
+	.footer__row
+		flex-direction: column-reverse
+	.form-wrapper
+		width: 100%
+	.footer-col
+		width: 100%
+	
+
+	
+
+
+
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px)
+	/**/
+	.main-screen 
+		background-image: none
+	.header.sticky .logo img
+		width: 100px
+	.main-screen 
+		padding-top: 85px
+	.main-screen__img 
+		margin-top: 65px
+	.h1
+		font-size: 38px
+	body 
+		font-size: 16px
+	.section
+		padding-top: 60px
+		padding-bottom: 60px
+	.partners__list
+		margin-top: 40px
+	.mission
+		padding-top: 80px
+		padding-bottom: 80px
+	.section-header
+		margin-bottom: 24px
+	.sub-title
+		margin-bottom: 5px
+	.mission
+		.text-center 
+			text-align: left !important
+	.h2 
+		br 
+			display: none
+	.capabilities
+		.section-header 
+			margin-bottom: 0
+	.capabilities__item-content
+		padding: 20px 20px
+		padding-bottom: 30px
+	.team__photo 
+		width: 180px 
+		height: 180px
+	.team .section-header 
+		margin-bottom: 0 
+	.news__img 
+		height: 50vw
+	.news .section-header
+		margin-bottom: 30px
+	.news-item__content 
+		padding: 15px
+		padding-bottom: 20px
+	.news .col-lg-7 .news-item:first-child,
+	.news .col-lg-7 .news-item:nth-child(2)
+		margin-top: 30px
+	.slide-item__wrapper
+		padding: 15px 20px
+	.next
+		right: 2vw 
+	.prev 
+		left: 2vw
+	.slider-wrapper 
+		margin-top: 50px
+	.footer
+		padding-top: 60px
+		background-size: 2150px
+	.footer-content
+		margin-top: 80px
+	.form-wrapper
+		padding-left: 20px 
+		padding-right: 20px
+
+	
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px)
+	/**/
+	.button 
+		width: 100%
+	.h2
+		font-size: 30px
+	.capabilities__item-img
+		height: 50vw
+	.header.sticky
+		padding-top: 5px 
+		padding-bottom: 5px
+	.capabilities .col-lg-4
+		margin-top: 30px
+	.footer
+		padding-top: 20px
+	.form-wrapper .form-title
+		font-size: 30px
+		margin-bottom: 30px
+	.form input
+		height: 50px 
+		padding: 0 15px
+		margin-bottom: 15px
+	.form textarea
+		margin-bottom: 15px
+	.form-wrapper
+		padding-top: 30px 
+		padding-bottom: 30px
+	.footer__bottom
+		flex-direction: column 
+		align-items: center 
+	.footer-social a
+		margin-left: 10px 
+		margin-right: 10px
+	.footer-logo 
+		margin-bottom: 30px
+	.footer__item
+		margin-bottom: 30px
+	.footer__item:first-child 
+		margin-top: 30px
+	.footer
+		background-size: 2075px
+	.news-item__footer .news-link img
+		width: 15px 
+		margin-left: 5px
+	.news-item 
+		border-radius: 10px
+	.form-wrapper
+		border-radius: 10px
+	video
+		object-fit: contain
+		object-position: center
+	.section
+		padding-top: 80px
+
+
+
+
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px)
+	/**/
+
+
+/*==========  Mobile First  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px)
+	/**/
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px)
+	/**/
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px)
+	/**/
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px)
+	/**/
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px)
+	/**/
+
+
+
+
+
