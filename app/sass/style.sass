@@ -14,6 +14,10 @@ body
     max-width: 85vw
     padding-left: 0 
     padding-right: 0
+.container-fluid--md
+    width: 1200px
+.container-fluid--xs
+    width: 1000px
 .h1 
     font-size: 60px 
     font-weight: 700
@@ -40,6 +44,21 @@ body
     margin-bottom: 0
 .h2--white 
     color: #fff
+.h2--line 
+    font-size: 40px
+    font-weight: 700
+    position: relative
+    display: inline-block  
+    margin-bottom: 35px
+.h2--line:after 
+    content: ''
+    width: 100% 
+    height: 5px 
+    background: $blue
+    display: block 
+    position: absolute 
+    top: 100% 
+    right: -30px
 p 
     margin-bottom: 0 
     margin-top: 0
@@ -75,6 +94,22 @@ a
 .capabilities__item:hover .blue-link:after
     position: relative
     left: 10px 
+.page-header 
+    text-align: center
+    padding-bottom: 100px
+    .h1 
+        margin-bottom: 20px
+    .line 
+        width: 190px 
+        height: 5px 
+        background: $blue
+        display: block 
+        margin-left: auto 
+        margin-right: auto
+        margin-top: 30px
+.page-header__text
+    font-size: 24px
+    color: rgba(#463838, .7)
 //end global style
 
 //start buttons style 
@@ -624,6 +659,182 @@ video
     height: 100vh 
     object-fit: cover 
     object-position: center
+
+//start preloader style
+#preloader
+    position: fixed
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    background-color: #fff
+    display: flex
+    justify-content: center
+    align-items: center
+    z-index: 10000
+#preloader video
+    max-width: 100%
+    max-height: 100%
+.fade-out
+    animation: fadeOut 1s ease forwards
+@keyframes fadeOut
+    to
+        opacity: 0
+        visibility: hidden
+//end preloader style 
+
+//start about page 
+.page 
+    margin-top: 256px
+    padding-bottom: 50px
+.about__item
+    padding-top: 50px 
+    padding-bottom: 50px
+.about__item-text
+    width: 600px 
+    max-width: 100%
+.about__img
+    width: 600px 
+    height: 400px 
+    max-width: 100% 
+    object-fit: cover 
+    object-position: center
+.about__item .row
+    display: flex 
+    align-items: center
+.about__item:nth-child(even)
+    .row 
+        display: flex 
+        flex-direction: row-reverse
+//end about page 
+
+.capabilities-page
+    .capabilities__list
+        .col-lg-4
+            margin-bottom: 30px
+.capabilities-single__item--black
+    background: #141B25
+    color: #fff
+.capabilities-single__item
+    padding-top: 80px
+    padding-bottom: 80px
+    li 
+        margin-top: 25px
+.capabilities-single__item--col
+    .container-fluid
+        display: flex 
+        justify-content: space-between 
+        align-items: center
+    .capabilities-single__item-text-wrap
+        width: 48%
+    .capabilities-single__image
+        max-width: 40%
+.capabilities-single__item--col--reverce
+    .container-fluid
+        display: flex 
+        justify-content: space-between 
+        align-items: center
+        flex-direction: row-reverse
+    .capabilities-single__item-text-wrap
+        width: 48%
+    .capabilities-single__image
+        max-width: 40%       
+.capabilities-single__image
+    display: flex 
+    margin-left: auto 
+    margin-right: auto  
+
+.product-page
+    padding-top: 100px
+    padding-bottom: 100px 
+
+.product-category__item
+    width: 100% 
+    height: 400px 
+    background: lightgrey
+    border-radius: 20px
+    display: flex 
+    flex-direction: column
+    align-items: center 
+    justify-content: center
+    color: #fff 
+    text-decoration: none
+    position: relative
+    overflow: hidden
+.product-category__item:hover 
+    color: #fff 
+    text-decoration: none
+.product-category__item-img
+    position: absolute
+    top: 0 
+    left: 0 
+    width: 100% 
+    height: 100% 
+    object-fit: cover 
+    object-position: center
+.product-category__item:after 
+    content: ''
+    position: absolute 
+    top: 0 
+    left: 0 
+    width: 100% 
+    height: 100% 
+    background: rgba(#000, .5)
+.product-category__item-title 
+    font-size: 42px 
+    font-weight: 700
+    text-transform: uppercase
+    font-family: $secondary-font
+    text-align: center
+.product-category__item-content
+    position: relative
+    z-index: 1
+    .button 
+        width: 295px
+        max-width: 100%
+        margin-left: auto 
+        margin-right: auto
+        margin-top: 10px
+.product-category__item--sub
+    margin-bottom: 30px
+    .product-category__item-title 
+        font-size: 28px
+.product-single-item__img
+    width: 100%
+    height: 300px
+    box-shadow: 0px 3.82271px 28.6704px rgba(0, 0, 0, 0.25)
+    border-radius: 20px
+    object-fit: cover
+    object-position: center 
+.product-single-item
+    color: #000000
+    margin-bottom: 60px 
+    display: block
+    p 
+        margin-bottom: 20px
+    img 
+        margin-bottom: 16px
+.product-single-item:hover
+    color: #000000
+.product__name
+    font-size: 33px 
+    color: #15264C
+    font-weight: 700
+.product-card
+    .product-single-item__img
+        height: 600px 
+        width: 90%
+.news--page
+    background: transparent
+    .col-lg-7 
+        padding-top: 0 
+        margin-top: 0
+.news--page .col-lg-7 .news-item:first-child
+    margin-top: 0
+.news--page .col-lg-5 .news-item
+    .news__img
+        height: 445px
+
 @import "media"
 
 
